@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[a4paper,10.5pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{wallpaper} %to add background logo
+\usepackage{graphicx}
+%Change the margins to fit your CV/resume content
+\usepackage[left=0.7in, right=1.5in, bottom=0.5in, top=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{background}
+\usepackage{xcolor}
+
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+\setmainfont[Color=4D4D4D]{TeX Gyre Heros}\setsansfont[Color=4D4D4D]{TeX Gyre Heros}
+
+\pagenumbering{gobble} %cover letter should be one page, {gobble}=no page number
+
+%make vertical line divider 
+\definecolor{seagreenblue}{HTML}{20B2AA}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{lightgray}{HTML}{999999}
+
+\SetBgScale{1}
+\SetBgAngle{0}
+\SetBgColor{seagreenblue}
+\SetBgContents{\rule{2pt}{\paperheight}}
+\SetBgHshift{7.6cm}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\setlength\parindent{0cm}
+
+
+\ULCornerWallPaper{1}{logopagegrey3.pdf}
+\begin{flushleft}
+ \today                           \\
+ \vspace{1em}   
+ Jane Smith \\                           
+ 100 Main Rd  \\
+ Melbourne, VIC 3000   \\
+\textcolor{gray}{\faPhone}$\;$0401$\;$234$\;$567        \\
+\textcolor{gray}{\faEnvelope}$\;$\href{mailto:name@domain.com}{name@domain.com}  \\ %insert your email address here for a clickable link
+\end{flushleft}
+
+
+\begin{flushleft}
+ Ms H. Surname \\
+{Hiring Manager, XYZ Division}         \\
+ Company Name\\
+ 
+\end{flushleft}
+
+\vspace{2em}
+
+Dear Ms Surname, \\
+
+%\vspace{1em}
+\onehalfspacing
+
+\indent I am writing to apply for your advertised XYZ positions (12345).
+
+\vspace{1em}
+
+\indent With a background in <details>, I am interested in <position specifics>.   I am keen to use X and Y skills to drive <position responsibilities> in the capacity of a <position title> with <company name>.
+
+\vspace{1em}
+
+\indent Focus on additional skills, experience and achievements relevant to the role in this paragraph.
+
+
+\vspace{1em}
+
+\indent I look forward to discussing my suitability for the role and how my extensive experience and skills can be an asset to your organisation.  I have attached my CV for your reference.  Thank you for your time and consideration.
+
+\vspace{1em}
+
+\begin{flushleft}
+Sincerely, \\
+\vspace{1em} 
+\includegraphics[trim=0cm 8cm 0cm 7cm, crop=true, scale=0.15]{Signature.pdf} \\ %insert your own signature here  trim={<left> <lower> <right> <upper>}
+\vspace{1em} 
+Jane Smith \\
+\end{flushleft}
+%}
+\end{document}
+
